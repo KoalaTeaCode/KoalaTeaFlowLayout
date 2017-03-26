@@ -10,6 +10,7 @@
 		16392F8F1E6F54680035B2FE /* KoalaTeaFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16392F851E6F54680035B2FE /* KoalaTeaFlowLayout.framework */; };
 		16392F941E6F54680035B2FE /* KoalaTeaFlowLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16392F931E6F54680035B2FE /* KoalaTeaFlowLayoutTests.swift */; };
 		16392F961E6F54680035B2FE /* KoalaTeaFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 16392F881E6F54680035B2FE /* KoalaTeaFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16392FA01E6F54720035B2FE /* KoalaTeaFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16392F9F1E6F54720035B2FE /* KoalaTeaFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		16392F8E1E6F54680035B2FE /* KoalaTeaFlowLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoalaTeaFlowLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16392F931E6F54680035B2FE /* KoalaTeaFlowLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoalaTeaFlowLayoutTests.swift; sourceTree = "<group>"; };
 		16392F951E6F54680035B2FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16392F9F1E6F54720035B2FE /* KoalaTeaFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KoalaTeaFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				16392F881E6F54680035B2FE /* KoalaTeaFlowLayout.h */,
 				16392F891E6F54680035B2FE /* Info.plist */,
+				16392F9F1E6F54720035B2FE /* KoalaTeaFlowLayout.swift */,
 			);
 			path = KoalaTeaFlowLayout;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					16392F841E6F54680035B2FE = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 6MS9QWALYV;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					16392F8D1E6F54680035B2FE = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16392FA01E6F54720035B2FE /* KoalaTeaFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		16392F9A1E6F54680035B2FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6MS9QWALYV;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "koala-tea.KoalaTeaFlowLayout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		16392F9B1E6F54680035B2FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6MS9QWALYV;
@@ -360,6 +368,7 @@
 		16392F9D1E6F54680035B2FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6MS9QWALYV;
 				INFOPLIST_FILE = KoalaTeaFlowLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		16392F9E1E6F54680035B2FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6MS9QWALYV;
 				INFOPLIST_FILE = KoalaTeaFlowLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
