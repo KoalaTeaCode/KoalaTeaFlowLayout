@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KoalaTeaFlowLayout"
-  s.version      = "0.0.1"
+  s.version      = "0.2.0"
   s.summary      = "KoalaTeaFlowLayout Class"
 
   s.description  = "This is a custom CollectionView Flow Layout class that makes it easy for you to drop in and define the columns and rows for your horizontal or vertical collection view."
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Craig Holliday" => "hollidaycraig@yahoo.com" }
+  s.author             = { "Craig Holliday" => "themisterholliday@gmail.com" }
   # Or just: s.author    = "Craig Holliday"
   # s.authors            = { "Craig Holliday" => "hollidaycraig@yahoo.com" }
   # s.social_media_url   = "http://twitter.com/Craig Holliday"
