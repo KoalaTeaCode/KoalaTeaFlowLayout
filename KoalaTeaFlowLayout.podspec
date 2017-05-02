@@ -16,12 +16,12 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KoalaTeaFlowLayout"
-  s.version      = "0.2.0"
+  s.version      = "0.3.0"
   s.summary      = "KoalaTeaFlowLayout Class"
 
   s.description  = "This is a custom CollectionView Flow Layout class that makes it easy for you to drop in and define the columns and rows for your horizontal or vertical collection view."
 
-  s.homepage     = "http://KoalaTea.io/"
+  s.homepage     = "http://www.koalatea.io/"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -32,8 +32,11 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license = { :type => 'MIT', :text => <<-LICENSE
+                   Copyright 2017
+                   Permission is granted to everyone.
+                 LICENSE
+               }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -58,7 +61,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -73,8 +76,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :path => '.' }
-
+  # s.source       = { :path => '.' }
+  s.source       = { :git => 'https://github.com/KoalaTeaCode/KoalaTeaFlowLayout.git', :tag => '0.2.0' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
