@@ -76,6 +76,31 @@ public class KoalaTeaFlowLayout: UICollectionViewFlowLayout {
 extension KoalaTeaFlowLayout {
     // Convenience Methods
     
+    // Vertical - With Height
+    convenience public init(ratio: CGFloat, topBottomMargin: CGFloat, leftRightMargin: CGFloat, cellsAcross: CGFloat, cellSpacing: CGFloat, collectionViewHeight: CGFloat) {
+        self.init()
+        self.scrollDirection = .vertical
+        
+        self.ratio = ratio
+        self.topBottomMargin = topBottomMargin
+        self.leftRightMargin = leftRightMargin
+        self.cellsAcross = cellsAcross
+        self.cellSpacing = cellSpacing
+        self.collectionViewHeight = collectionViewHeight
+        
+        let spaceBetweenCells = cellSpacing * (cellsAcross - marginOfError)
+        let width = (collectionViewWidth - (leftRightMargin * 2) - spaceBetweenCells) / cellsAcross - marginOfError
+        let estimatedCells = (collectionViewHeight - (topBottomMargin * 2) - spaceBetweenCells) / (width * ratio)
+        let height = (collectionViewHeight - (topBottomMargin * 2) - spaceBetweenCells) / estimatedCells
+        let calculatedItemSize = CGSize(width: width, height: height)
+        
+        itemSize = calculatedItemSize
+        
+        sectionInset = UIEdgeInsets(top: topBottomMargin, left: leftRightMargin, bottom: topBottomMargin, right: leftRightMargin)
+        minimumInteritemSpacing = cellSpacing
+        minimumLineSpacing = cellSpacing
+    }
+    
     // Vertical - All
     convenience public init(ratio: CGFloat, topBottomMargin: CGFloat, leftRightMargin: CGFloat, cellsAcross: CGFloat, cellSpacing: CGFloat, collectionViewWidth: CGFloat) {
         self.init()

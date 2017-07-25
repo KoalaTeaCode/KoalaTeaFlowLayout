@@ -77,7 +77,8 @@ Pod::Spec.new do |s|
   #
 
   # s.source       = { :path => '.' }
-  s.source       = { :git => 'https://github.com/KoalaTeaCode/KoalaTeaFlowLayout.git', :tag => '0.2.0' }
+
+  s.source       = { :git => 'https://github.com/KoalaTeaCode/KoalaTeaFlowLayout.git', :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
