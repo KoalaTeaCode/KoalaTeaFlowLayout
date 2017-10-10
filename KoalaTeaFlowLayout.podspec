@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KoalaTeaFlowLayout"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "KoalaTeaFlowLayout Class"
 
   s.description  = "This is a custom CollectionView Flow Layout class that makes it easy for you to drop in and define the columns and rows for your horizontal or vertical collection view."

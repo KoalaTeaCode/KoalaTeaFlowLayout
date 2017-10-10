@@ -194,4 +194,26 @@ extension KoalaTeaFlowLayout {
         
         setupFullLayout()
     }
+    
+    // Vertical - With defined cell size
+    convenience public init(cellWidth: CGFloat,
+                            cellHeight: CGFloat,
+                            topBottomMargin: CGFloat,
+                            leftRightMargin: CGFloat,
+                            cellSpacing: CGFloat) {
+        self.init()
+        self.scrollDirection = .vertical
+        
+        self.cellSpacing = cellSpacing
+        
+        let width = cellWidth
+        let height = cellHeight
+        let calculatedItemSize = CGSize(width: width, height: height)
+        
+        itemSize = calculatedItemSize
+        
+        sectionInset = UIEdgeInsets(top: topBottomMargin, left: leftRightMargin, bottom: topBottomMargin, right: leftRightMargin)
+        minimumInteritemSpacing = cellSpacing
+        minimumLineSpacing = cellSpacing
+    }
 }
